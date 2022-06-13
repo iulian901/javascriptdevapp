@@ -1,0 +1,13 @@
+<h1>{{ title }}</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam impedit accusamus officia sed quae facilis delectus. Voluptatibus quisquam quidem quos animi illo dolores vel! Nam quia earum molestiae ullam corporis.</p>
+<ul>
+    <li>{{ user.id }}</li>
+    <li>{{ user.nume }}</li>
+    <li>{{ user.prenume }}</li>
+</ul>
+
+{{ image }}
+<img [src]="image" [alt]="user.nume">
+<img *ngIf = 'showImage' src='{{ image }}' alt="{{ user.nume }}">
+
+<button (click)="afiseazaImagine()">Afiseaza/Ascunde Imagine</button>
